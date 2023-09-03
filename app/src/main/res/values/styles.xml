@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearanceBoldLarge">
+        <item name="android:textSize">20sp</item> <!-- Set the desired text size -->
+        <item name="android:textStyle">bold</item> <!-- Set the text style to bold -->
+    </style>
+
+</resources>

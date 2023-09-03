@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/first_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="Ingrese el primer texto"
+            android:autofillHints="Primer texto"
+            android:text="Primer texto"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/second_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="Ingrese el segundo texto"
+            android:autofillHints="Segundo texto"
+            android:text="Segundo texto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comparador"
+        app:layout_constraintTop_toBottomOf="@+id/textos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/boton_comparador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARAR"/>
+
+
+    </LinearLayout>
+    <Space
+        android:id="@+id/espaciofinal"
+        app:layout_constraintTop_toBottomOf="@+id/comparador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/espaciofinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:textAppearance="@style/TextAppearanceBoldLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
